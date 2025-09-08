@@ -1,0 +1,38 @@
+{
+  "name": "evershop-dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "evershop install",
+    "build": "evershop build",
+    "start": "evershop start",
+    "start:debug": "evershop start --debug",
+    "user:create": "evershop user:create",
+    "user:changePassword": "evershop user:changePassword" ,
+    "dev": "evershop dev"
+  },
+  "workspaces": [
+    "extensions/*",
+    "themes/eve"
+  ],
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@evershop/evershop": "^2.0.1"
+  },
+  "devDependencies": {
+    "@parcel/watcher": "^2.5.1",
+    "@types/config": "^3.3.5",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "@types/pg": "^8.15.5",
+    "@types/react": "^19.1.12",
+    "execa": "^9.6.0",
+    "typescript": "^5.9.2"
+  }
+}
